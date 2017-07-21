@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/** Theme **/
+/*
+    Color-Scheme:
+
+ */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #ffffff;
+  color: #000000;
+}
+
+/**  ================================
+                Home Page
+     ================================ **/
+
+.header-content {
+  height: 250px;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  background: #749bff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #78eeff, #57baff); /* For Safari */
+  border-bottom: solid 3px #656565;
+}
+
+.header-banner {
+  position: relative;
+  top: 50px;
+}
+
+.header-banner h1 {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+}
+
+.header-banner h3 {
+  color: #656565;
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-banner p {
+  color: #656565;
+  margin: 0;
+  font-size: 14px;
+}
+
+.main-input {
+  position: relative;
+  top: 70px;
+  width: 400px;
+  border: none;
+}
+
+.find-button {
+  position: relative;
+  top: 70px;
+}
+
+.main-input:active, .main-input:focus, .main-input:hover {
+  outline: none;
+}
+
+.main-content {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/**  ================================
+               Nav Bar
+     ================================ **/
+
+.navbar {
+  background-color: white;
+  color: #656565;
+}
+
+.navbar-default {
+  border-bottom: solid 3px #656565;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: #78eeff;
+  color: #656565;
+}
+
+.navbar-default .navbar-header a.navbar-brand {
+  font-weight: 500;
+  background-color: white;
+  color: #57baff;
+}
+
+/** Footer **/
+
+.biasfooter {
+  bottom: 0px;
+  color: white;
+  padding-top: 30px;
+  background-color: #656565;
+}
+
+/**  ================================
+               Main content
+     ================================ **/
+.placeholder-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.article {
+  height: 380px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.article:hover {
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.article h3 {
+  padding: 0px;
+  margin-top: 8px;
+  color: black;
+  font-size: 18px
+}
+
+.article h4 {
+  font-size: 14px;
+  padding: 0px;
+}
+
+.article a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+.article img {
+  width: 200px;
+  height: auto;
+}
+
+/** Front Page Body **/
+
+.body-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.description {
+
+}
+
+/** Footer **/
+.footer {
+  background-color: #656565;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}

@@ -12,15 +12,20 @@
 </nav>
 <div class="header-content">
   <div class="header-banner">
-    <h1>BiaScraper</h1>
-    <h3>Slogan goes here: it will be dope</h3>
+    <h1>BiaSearch</h1>
+    <h3>100% money-back guarantee!</h3>
     <p>Input an url to an article on any well known website and be presented
-      with </p>
+      with similar articles from sources with differing biases.</p>
   </div>
-  <input id="url-input" name="article" placeholder="name" class="main-input" type="text"/>
-  <button id="url-button" name="urlbutton" class="find-button">Find!</button>
+  <input [(ngModel)]="url" id="url-input" name="article" placeholder="name" class="main-input" type="text"/>
+  <button (click)="getArticles(url)" id="url-button" name="urlbutton" class="find-button">Find!</button>
 </div>
 <div class="main-content">
+  <div>
+    <li *ngFor="let article of articles">
+      <h1>{{article.title}}</h1>
+    </li>
+  </div>
   <div class="placeholder-content text-center">
     <p>This is the placeholder text we will have when a user has not made a request yet. <br>
       Maybe we will describe mission, ourselves, why bees are dying at an alarming rate? <br>

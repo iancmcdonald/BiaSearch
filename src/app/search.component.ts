@@ -12,6 +12,7 @@ import {Article} from './article';
 
 export class SearchComponent {
   articles: Article[];
+  url: string;
 
   constructor(private searchService: SearchService) {
   }

@@ -21,26 +21,28 @@
   <button (click)="getArticles(url)" id="url-button" name="urlbutton" class="find-button">Find!</button>
 </div>
 <div class="main-content">
-  <div>
-    <li *ngFor="let article of articles">
-      <h1>{{article.title}}</h1>
-    </li>
-  </div>
-  <div class="placeholder-content text-center">
+  <div *ngIf="placeholder_toggle" class="placeholder-content text-center">
     <p>This is the placeholder text we will have when a user has not made a request yet. <br>
       Maybe we will describe mission, ourselves, why bees are dying at an alarming rate? <br>
       Maybe we include an image. Mostly we tell them to make an article request because we <br>
       really have nothing interesting to say.
     </p>
   </div>
+  <div *ngIf="loading" class="loading text-center">
+    <h3>Hold tight while we find some articles for you! :)</h3>
+    <img src="/src/app/loading.gif">
+  </div>
   <div class="row">
-    <div>
-      <div class="col-sm-4">
-        <div class="article">
-          <div class="text-center">
+      <div *ngFor="let article of articles">
+        <div class="col-sm-4">
+          <div class="article">
+            <div class="text-center">
+              <h3>{{article.title}}</h3>
+              <h4>{{article.source}}</h4>
+              <img src={{article.imageUrl}}>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </div>

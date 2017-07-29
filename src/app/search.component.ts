@@ -25,7 +25,9 @@ export class SearchComponent {
     this.placeholder_toggle = false;
     this.loading = true;
     this.searchService.getArticles(url)
-      .then(result => this.articles = result);
-    this.loading = false;
+      .then(result => {
+        this.articles = result
+        this.loading = false;
+      });
   }
 }

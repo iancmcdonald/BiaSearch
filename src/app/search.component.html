@@ -34,20 +34,27 @@
   </div>
   <div class="loading">
   </div>
-  <div class="article-display">
+  <div *ngIf="!loading && !placeholder_toggle"class="article-display">
     <div class="row">
         <div *ngFor="let article of articles">
           <div class="col-sm-4">
-            <div class="article">
+            <div onclick="window.location = article.url;" class="article">
               <div class="text-center">
+                <a href={{article.url}}></a>
                 <h3>{{article.title}}</h3>
                 <h4>{{article.source}}</h4>
                 <img src={{article.imageUrl}}>
+                <div class="content">
+                  <p>{{article.text}}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
     </div>
+  </div>
+  <div *ngIf="!loading && !placeholder_toggle && articles.length==0" class="placeholder-content text-center" >
+    <h3>We aint found shit </h3>
   </div>
   <footer class="container-fluid biasfooter">
     <div class="text-center">

@@ -114,11 +114,16 @@
 .placeholder-content img{
   width: 75px;
 }
+.article-display {
+  padding: 20px;
+}
 
 .article {
-  height: 380px;
+  cursor: pointer;
+  height: 350px;
   padding-left: 2px;
   padding-right: 2px;
+  overflow: hidden;
 }
 
 .article:hover {
@@ -129,14 +134,14 @@
 
 .article h3 {
   font-family: "American Typewriter";
-  padding: 0px;
-  margin-top: 8px;
+  maring: 0px;
+  padding-top: 10px;
   color: black;
   font-size: 18px
 }
 
 .article h4 {
-  font-size: 14px;
+  font-size: 18px;
   padding: 0px;
 }
 
@@ -145,21 +150,21 @@
 }
 
 .article img {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
-
-/** Front Page Body **/
-
-.body-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.article .content {
+  margin: 0;
+  padding-top: 10px;
+  background-image: linear-gradient(to bottom,
+    transparent 0px,
+    transparent 30px,
+    #b9b9b9 100%
+  );
 }
-
-.description {
-
+.article .content p {
+  width: 80%;
 }
-
 /** Footer **/
 .biasfooter {
   height: 100px;

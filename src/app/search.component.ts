@@ -26,7 +26,7 @@ export class SearchComponent {
     this.loading = true;
     this.searchService.getArticles(url)
       .then(result => {
-        this.articles = result
+        this.articles = result;
         this.loading = false;
       });
   }

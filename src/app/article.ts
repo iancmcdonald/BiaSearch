@@ -3,6 +3,7 @@ export class Article {
   url: string;
   imageUrl: string;
   source: string;
+  text: string;
 }
 
 // export class Article {

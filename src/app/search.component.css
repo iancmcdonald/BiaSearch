@@ -119,11 +119,13 @@
 }
 
 .article {
-  cursor: pointer;
+  width: 300px;
   height: 350px;
+  cursor: pointer;
   padding-left: 2px;
   padding-right: 2px;
   overflow: hidden;
+  align-content: center;
 }
 
 .article:hover {
@@ -133,8 +135,8 @@
 }
 
 .article h3 {
-  font-family: "American Typewriter";
-  maring: 0px;
+  margin: 0px;
+  padding-bottom: 0px;
   padding-top: 10px;
   color: black;
   font-size: 18px
@@ -143,6 +145,7 @@
 .article h4 {
   font-size: 18px;
   padding: 0px;
+  margin: 0px;
 }
 
 .article a:hover, a:active, a:focus {
@@ -150,21 +153,20 @@
 }
 
 .article img {
-  width: 250px;
-  height: auto;
+  width: 225px;
+  height: 125px;
 }
 .article .content {
+  width: 255px;
+  text-align: left;
+}
+.article. .content .text{
   margin: 0;
   padding-top: 10px;
-  background-image: linear-gradient(to bottom,
-    transparent 0px,
-    transparent 30px,
-    #b9b9b9 100%
-  );
+  background: linear-gradient(transparent 150px, white);
+  overflow: hidden;
 }
-.article .content p {
-  width: 80%;
-}
+
 /** Footer **/
 .biasfooter {
   height: 100px;

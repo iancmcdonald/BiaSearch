@@ -40,13 +40,15 @@
           <div class="col-sm-4">
             <div onclick="window.location = article.url;" class="article">
               <div class="text-center">
-                <a href={{article.url}}></a>
-                <h3>{{article.title}}</h3>
-                <h4>{{article.source}}</h4>
                 <img src={{article.imageUrl}}>
                 <div class="content">
-                  <p>{{article.text}}</p>
+                  <h3>{{article.title}}</h3>
+                  <h4>{{article.source}}</h4>
+                  <div class="text">
+                    <p>{{article.text.split(" ", 40).join(" ") + "..."}} </p>
+                  </div>
                 </div>
+                <a class="read-more-button" href={{article.url}}>Click to Read More!</a>
               </div>
             </div>
           </div>

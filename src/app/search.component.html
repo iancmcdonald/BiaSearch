@@ -4,8 +4,7 @@
       <a class="navbar-brand" href="#">BiaScraper</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="About.html">About</a></li>
-      <li><a href="Team.html">Team</a></li>
+      <li><a [routerLink]="['/about']" href="About.html">About</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
   </div>
@@ -44,7 +43,7 @@
                 <div class="content">
                   <h3>{{article.title}}</h3>
                   <h4>{{article.source}}</h4>
-                  <div class="text">
+                  <div class="fade">
                     <p>{{article.text.split(" ", 40).join(" ") + "..."}} </p>
                   </div>
                 </div>

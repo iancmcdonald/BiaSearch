@@ -8,39 +8,6 @@
                 Home Page
      ================================ **/
 
-.header-content {
-  height: 250px;
-  width: 100%;
-  align-content: center;
-  text-align: center;
-  background: #749bff; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #78eeff, #57baff); /* For Safari */
-  border-bottom: solid 3px #656565;
-}
-
-.header-banner {
-  position: relative;
-  top: 50px;
-}
-
-.header-banner h1 {
-  margin: 0;
-  color: white;
-  font-size: 50px;
-}
-
-.header-banner h3 {
-  color: #656565;
-  margin: 0;
-  font-size: 20px;
-}
-
-.header-banner p {
-  color: #656565;
-  margin: 0;
-  font-size: 14px;
-}
-
 .main-input {
   position: relative;
   top: 70px;
@@ -119,7 +86,6 @@
 }
 
 .article {
-  width: 300px;
   height: 350px;
   cursor: pointer;
   padding-left: 2px;
@@ -134,18 +100,17 @@
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
 }
 
+.article h3, h4 {
+  margin: 0;
+  padding: 0;
+}
 .article h3 {
-  margin: 0px;
-  padding-bottom: 0px;
-  padding-top: 10px;
-  color: black;
-  font-size: 18px
+  font-size: 17px;
+  font-weight: 900;
 }
 
 .article h4 {
-  font-size: 18px;
-  padding: 0px;
-  margin: 0px;
+  font-size: 13px;
 }
 
 .article a:hover, a:active, a:focus {
@@ -157,14 +122,23 @@
   height: 125px;
 }
 .article .content {
+  height: 200px;
   width: 255px;
+  margin: 0 auto;
   text-align: left;
-}
-.article. .content .text{
-  margin: 0;
-  padding-top: 10px;
-  background: linear-gradient(transparent 150px, white);
   overflow: hidden;
+}
+.article. .content .fade{
+  position: absolute;
+  width:100%;
+  margin: 0;
+  bottom:0;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(95%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
 }
 
 /** Footer **/

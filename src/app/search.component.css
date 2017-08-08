@@ -25,40 +25,6 @@
 }
 
 /**  ================================
-               Nav Bar
-     ================================ **/
-
-.navbar {
-  background-color: white;
-  color: #656565;
-}
-
-.navbar-default {
-  border-bottom: solid 3px #656565;
-  margin-bottom: 0;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  background-color: #78eeff;
-  color: #656565;
-}
-
-.navbar-default .navbar-header a.navbar-brand {
-  font-weight: 500;
-  background-color: white;
-  color: #57baff;
-}
-
-/** Footer **/
-
-.biasfooter {
-  bottom: 0px;
-  color: white;
-  padding-top: 30px;
-  background-color: #656565;
-}
-
-/**  ================================
                Main content
      ================================ **/
 .placeholder-content {

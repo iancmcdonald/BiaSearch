@@ -1,15 +1,53 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">BiaScraper</a>
+      <a class="navbar-brand" [routerLink]="['/']">BiaScraper</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
-<div class="text-center">
-  <h2>BiaSearch Goal</h2>
-  <p></p>
+<div class="about-block why">
+  <h1>BiaSearch Mission and Goal</h1>
+  <p>it is sometimes hard to know whether or not the new you are receiving is impartial. In fact, every source owns an
+  innate bias upon creaton. Some are certainly more extreme than others, but regardless, one should not limit themselves
+  to one source. And so, instead </p>
 </div>
+<div class="about-block how">
+  <h1>How does it work?</h1>
+  <p>The application has been created using . The site is hosted on on AWS. 2</p>
+</div>
+<div class="about-block who">
+  <h1>Meet the Team (of 2)</h1>
+  <div class="row row-centered">
+    <div class="col-sm-4 col-centered">
+      <div class="who-block">
+        <img src="../assets/Ian.png">
+        <h2>Ian McDonald</h2>
+        <p>Hailing from Ripon, California, Ian is a Senior at UC Berkeley studying Computer Science.
+        Ian is interested in ####TO DO####. He is a backend wizard and is responsible for much of the applications
+          architecture and functionality. <br><br></p>
+        <p style="text-align:center">Click the button below to visit Ian's personal website. </p>
+        <input type="button" class="btn btn-info" value="Ian's Site" onclick="location.href = 'http:\\www.iancmcdonald.com';">
+      </div>
+    </div>
+    <div class="col-sm-4 col-centered">
+      <div class="who-block">
+        <img src="../assets/Tristan.png">
+        <h2>Tristan Burke</h2>
+        <p>Although born in New Jersey, Tristan lived most of his life in London before coming to UC Berkeley. He is a
+          Junior studying Computer Science and looking to somehow combine his love for his music with the technical skills
+          he's picked up at Berkeley. Tristan wrote much of the frontend html and css for this application.<br><br></p>
+        <p style="text-align:center">Click the button below to visit Tristan's personal website. </p>
+        <input type="button" class="btn btn-info" value="Tristan's Site" onclick="location.href = 'http:\\www.tristan-burke.com';">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid biasfooter">
+  <div class="text-center">
+    <p>All Rights Reserved - Copyright Tristan Burke, Ian McDonald &copy; 2017 </p>
+  </div>
+</footer>
+

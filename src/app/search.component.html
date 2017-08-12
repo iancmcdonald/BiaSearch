@@ -5,7 +5,6 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a [routerLink]="['/about']" href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -57,9 +56,9 @@
   <div *ngIf="!loading && !placeholder_toggle && articles.length==0" class="placeholder-content text-center" >
     <h3>We aint found shit </h3>
   </div>
-  <footer class="container-fluid biasfooter">
-    <div class="text-center">
-      <p>All Rights Reserved - Copyright Tristan Burke, Ian McDonald &copy; 2017 </p>
-    </div>
-  </footer>
 </div>
+<footer class="container-fluid biasfooter">
+  <div class="text-center">
+    <p>All Rights Reserved - Copyright Tristan Burke, Ian McDonald &copy; 2017 </p>
+  </div>
+</footer>

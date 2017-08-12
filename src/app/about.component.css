@@ -1,0 +1,56 @@
+.about-block {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  border-bottom: solid 3px #656565;
+}
+.about-block h1 {
+  padding-top: 25px;
+  margin: 0;
+  font-size: 50px;
+}
+.about-block p {
+  margin: 0;
+  font-size: 14px;
+}
+.why {
+  background: #749bff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #78eeff, #57baff);
+}
+.why h1 {
+  color: white;
+}
+.why p {
+  color: #656565;
+}
+.how {
+   background-color: #919191;
+ }
+.how h1, p{
+  color: white;
+}
+.who {
+
+}
+.who h1{
+
+}
+.who-block{
+  height: 500px;
+}
+.who p{
+  color: #656565;
+  text-align: left;
+}
+.who img{
+  height: 200px;
+  width: auto;
+
+}
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+}

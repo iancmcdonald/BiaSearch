@@ -36,6 +36,8 @@
 
 }
 .who-block{
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 500px;
 }
 .who p{
@@ -45,7 +47,12 @@
 .who img{
   height: 200px;
   width: auto;
-
+}
+.who .btn{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .row-centered {
   text-align:center;
@@ -53,4 +60,7 @@
 .col-centered {
   display:inline-block;
   float:none;
+}
+.col-sm-4 {
+  vertical-align: top;
 }

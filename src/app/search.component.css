@@ -86,6 +86,8 @@
 .article img {
   width: 225px;
   height: 125px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .article .content {
   height: 200px;
@@ -93,20 +95,11 @@
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
+  background-image: linear-gradient(to bottom, transparent, white);
 }
-.article. .content .fade{
+.article .btn {
   position: absolute;
-  width:100%;
-  margin: 0;
-  bottom:0;
-  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(95%,rgba(255,255,255,1)));
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
-  background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
-  background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
-  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
-}
-
-.biasfooter {
-  background-color: #656565;
+  left: 50%;
+  bottom: 5px;
+  transform: translate(-50%, -50%);
 }

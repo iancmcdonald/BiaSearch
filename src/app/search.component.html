@@ -42,36 +42,17 @@
                 <div class="content">
                   <h3>{{article.title}}</h3>
                   <h4>{{article.source}}</h4>
-                  <div class="fade">
-                    <p>{{article.text.split(" ", 40).join(" ") + "..."}} </p>
-                  </div>
+                  <p>{{article.text.split(" ", 35).join(" ") + "..."}} </p>
                 </div>
-                <a class="read-more-button" href={{article.url}}>Click to Read More!</a>
+                <a class="read-more-button btn btn-info" href={{article.url}}>Click to Read More!</a>
               </div>
             </div>
           </div>
         </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div onclick="window.location = article.url;" class="article">
-        <div class="text-center">
-          <img src={{article.imageUrl}}>
-          <div class="content">
-            <h3>Trump's chief strategist Steve Bannon fired</h3>
-            <h4>CNN</h4>
-            <p>President Donald Trump's chief strategist Steve Bannon has been fired, multiple White House officials told CNN on Friday.
-                Sources told CNN that Bannon's ouster he has blah blah more text and more paragraph stuff ...
-            </p>
-          </div>
-        </div>
-        <a class="read-more-button btn btn-info" href="http://www.cnn.com/2017/08/18/politics/steve-bannon-white-house/index.html">Click to Read More!</a>
-      </div>
-    </div>
-  </div>
   <div *ngIf="!loading && !placeholder_toggle && articles.length==0" class="placeholder-content text-center" >
-    <h3>We aint found shit </h3>
+    <h3>Sorry, we weren't able to find any matches! Try again or try another article!</h3>
   </div>
 </div>
 <footer class="container-fluid biasfooter">

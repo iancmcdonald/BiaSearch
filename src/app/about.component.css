@@ -1,7 +1,5 @@
 .about-block {
   width: 100%;
-  align-content: center;
-  text-align: center;
   border-bottom: solid 3px #656565;
 }
 .about-block h1 {
@@ -12,6 +10,10 @@
 .about-block p {
   margin: 0;
   font-size: 14px;
+}
+.about-content {
+  width: 500px;
+  margin: auto;
 }
 .why {
   background: #749bff; /* For browsers that do not support gradients */

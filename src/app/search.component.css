@@ -95,8 +95,16 @@
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, transparent, white);
 }
+.article .content fadeout {
+     position:absolute;
+     bottom:0;
+     height:50px;
+     width:100%;
+     background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+     background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
 .article .btn {
   position: absolute;
   left: 50%;

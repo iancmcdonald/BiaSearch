@@ -44,13 +44,22 @@
   padding-bottom: 20px;
   height: 500px;
 }
+.who-block:hover {
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+}
 .who p{
   color: #656565;
   text-align: left;
+  padding: 5px;
 }
 .who img{
   height: 200px;
   width: auto;
+}
+.img-circle {
+    border-radius: 50%;
 }
 .who .btn{
   position: absolute;
